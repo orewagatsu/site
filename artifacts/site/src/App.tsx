@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import NavigationBar from "./components/NavigationBar";
+import ScrollContactPopup from "./components/ScrollContactPopup";
 import Home from "./components/home";
 import BusinessEnglishPage from "./components/BusinessEnglishPage";
 import RegularCommunicationsPage from "./components/RegularCommunicationsPage";
@@ -20,6 +21,7 @@ function App() {
   return (
     <HelmetProvider>
       <NavigationBar />
+      <ScrollContactPopup />
       <Routes>
         {/* English Routes */}
         <Route path="/en" element={<Home />} />
