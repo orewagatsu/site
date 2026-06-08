@@ -112,7 +112,12 @@ export default function InterculturalConsultingPageJA() {
         description="TEFL認定ビジネスコンサルタントによる国際コミュニケーション専門指導で、組織のグローバル能力を変革。いわき拠点チームが国際ビジネス英語、経営管理、グローバル展開戦略の専門ガイダンスを提供。"
         keywords="ビジネスコンサルティング いわき, TEFL認定ビジネスコンサルタント, 国際コミュニケーション研修, 国際ビジネス英語, グローバル展開戦略, ビジネス管理 日本"
         lang="ja"
-        canonical="https://zealous-chandrasekhar2-9jm3e.view-3.tempo-dev.app/business-consulting"
+        canonical="https://www.dreamenglishiwaki.com/intercultural-consulting"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/intercultural-consulting" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/intercultural-consulting" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/intercultural-consulting" },
+        ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         {/* Hero Section */}

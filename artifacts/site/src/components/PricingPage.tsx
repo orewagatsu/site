@@ -75,7 +75,12 @@ export default function PricingPage() {
         description="Transparent pricing for TEFL-certified English instruction in Iwaki, Japan. Choose from Business English, TOEIC preparation, conversation classes, and intercultural consulting services."
         keywords="English learning pricing Iwaki, TEFL certified English classes cost, Business English pricing Japan, TOEIC preparation fees, English conversation class prices, intercultural consulting rates"
         lang="en"
-        canonical="https://zealous-chandrasekhar2-9jm3e.view-3.tempo-dev.app/en/pricing"
+        canonical="https://www.dreamenglishiwaki.com/en/pricing"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/pricing" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/pricing" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/pricing" },
+        ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         {/* Hero Section */}

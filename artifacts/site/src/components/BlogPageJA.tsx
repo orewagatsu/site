@@ -105,8 +105,13 @@ export default function BlogPageJA() {
         title="英語学習ブログ - TOEICのコツ、ビジネス英語、成功ストーリー | ドリーム英語いわき"
         description="いわき市のドリーム英語スクールからの専門的な英語学習のコツ、TOEIC戦略、ビジネス英語アドバイス、学生の成功ストーリー。英語学習者のための無料リソース。"
         keywords="英語学習のコツ, TOEIC戦略, ビジネス英語アドバイス, 英語学習教材, いわき英語ブログ, TEFL教授法, 英語成功ストーリー, 無料TOEIC練習"
-        canonical="https://your-domain.com/blog-ja"
+        canonical="https://www.dreamenglishiwaki.com/blog"
         lang="ja"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/blog" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/blog" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/blog" },
+        ]}
       />
       
       <div className="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-rose-50">

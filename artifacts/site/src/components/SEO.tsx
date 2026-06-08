@@ -1,6 +1,11 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { getLocalBusinessSchema } from "../utils/sitemap";
 
+interface HreflangAlternate {
+  hreflang: string;
+  href: string;
+}
+
 interface SEOProps {
   title?: string;
   description?: string;
@@ -17,6 +22,7 @@ interface SEOProps {
   lang?: string;
   structuredData?: object;
   isLocalBusiness?: boolean;
+  hreflangAlternates?: HreflangAlternate[];
 }
 
 const defaultSEO = {
@@ -46,6 +52,7 @@ export default function SEO({
   lang = defaultSEO.lang,
   structuredData,
   isLocalBusiness = false,
+  hreflangAlternates,
 }: SEOProps) {
   const finalTitle = title || defaultSEO.title;
   const finalDescription = description || defaultSEO.description;
@@ -109,6 +116,11 @@ export default function SEO({
 
       {/* Canonical URL */}
       {canonical && <link rel="canonical" href={canonical} />}
+
+      {/* Hreflang alternates for bilingual pages */}
+      {hreflangAlternates?.map(({ hreflang, href }) => (
+        <link key={hreflang} rel="alternate" hreflang={hreflang} href={href} />
+      ))}
 
       {/* Structured Data */}
       <script type="application/ld+json">

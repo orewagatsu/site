@@ -112,7 +112,12 @@ export default function InterculturalConsultingPage() {
         description="Transform your organization's global capabilities with TEFL-certified business consultants specializing in international communication. Our Iwaki-based team provides expert guidance in international business English, cross-cultural management, and global expansion strategies."
         keywords="business consulting Iwaki, TEFL certified business consultants, cross-cultural communication training, international business English, global expansion strategies, business management Japan"
         lang="en"
-        canonical="https://zealous-chandrasekhar2-9jm3e.view-3.tempo-dev.app/en/business-consulting"
+        canonical="https://www.dreamenglishiwaki.com/en/intercultural-consulting"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/intercultural-consulting" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/intercultural-consulting" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/intercultural-consulting" },
+        ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         {/* Hero Section */}

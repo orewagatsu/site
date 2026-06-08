@@ -122,7 +122,12 @@ export default function RegularCommunicationsPage() {
         description="Build natural English conversation skills with TEFL-certified instructors in Iwaki. Our classes complement Business English and TOEIC preparation programs through practical communication practice and cultural exchange."
         keywords="English conversation classes Iwaki, TEFL certified conversation training, English speaking practice, conversation circles Iwaki, English communication skills Japan"
         lang="en"
-        canonical="https://zealous-chandrasekhar2-9jm3e.view-3.tempo-dev.app/en/regular-communications"
+        canonical="https://www.dreamenglishiwaki.com/en/regular-communications"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/regular-communications" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/regular-communications" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/regular-communications" },
+        ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         {/* Hero Section */}

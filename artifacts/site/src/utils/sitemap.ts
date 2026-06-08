@@ -6,7 +6,7 @@ export interface SitemapUrl {
   priority?: number;
 }
 
-export const generateSitemap = (baseUrl: string = 'https://a2c60b6d-3e58-49b4-a478-cf1ba3d10655.canvases.tempo.build'): string => {
+export const generateSitemap = (baseUrl: string = 'https://www.dreamenglishiwaki.com'): string => {
   const currentDate = new Date().toISOString().split('T')[0];
   
   const urls: SitemapUrl[] = [
@@ -43,7 +43,7 @@ ${urls.map(url => `  <url>
 };
 
 // Generate robots.txt content
-export const generateRobotsTxt = (baseUrl: string = 'https://a2c60b6d-3e58-49b4-a478-cf1ba3d10655.canvases.tempo.build'): string => {
+export const generateRobotsTxt = (baseUrl: string = 'https://www.dreamenglishiwaki.com'): string => {
   return `User-agent: *
 Allow: /
 
@@ -73,7 +73,7 @@ export const getLocalBusinessSchema = () => {
     "name": "Dream English School",
     "alternateName": "ドリーム英語スクール",
     "description": "TEFL-certified English school in Iwaki, Japan specializing in Business English, TOEIC preparation, and intercultural consulting for professionals.",
-    "url": "https://a2c60b6d-3e58-49b4-a478-cf1ba3d10655.canvases.tempo.build",
+    "url": "https://www.dreamenglishiwaki.com",
     "telephone": "+81-80-2839-8777",
     "email": "iwakidream@outlook.com",
     "address": {

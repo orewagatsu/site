@@ -65,7 +65,12 @@ export default function BusinessEnglishPageJA() {
         description="いわき市でTEFL認定ビジネス英語指導とTOEIC対策でキャリアアップ。ビジネスコンサルタント、エグゼクティブ、グローバルキャリアを目指す専門家向けの英語プログラム。"
         keywords="ビジネス英語 いわき, TEFL認定ビジネス研修, TOEIC対策, 専門英語 いわき, エグゼクティブコミュニケーション研修, ビジネス英語クラス 日本"
         lang="ja"
-        canonical="https://zealous-chandrasekhar2-9jm3e.view-3.tempo-dev.app/business-english"
+        canonical="https://www.dreamenglishiwaki.com/business-english"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/business-english" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/business-english" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/business-english" },
+        ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         {/* Hero Section */}

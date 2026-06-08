@@ -74,7 +74,12 @@ export default function PricingPageJA() {
         description="いわき市でのTEFL認定英語指導の透明な料金設定。ビジネス英語、TOEIC対策、会話クラス、異文化コンサルティングサービスからお選びください。"
         keywords="英語学習料金 いわき, TEFL認定英語クラス費用, ビジネス英語料金 日本, TOEIC対策費用, 英会話クラス価格, 異文化コンサルティング料金"
         lang="ja"
-        canonical="https://zealous-chandrasekhar2-9jm3e.view-3.tempo-dev.app/pricing"
+        canonical="https://www.dreamenglishiwaki.com/pricing"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/pricing" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/pricing" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/pricing" },
+        ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         {/* Hero Section */}

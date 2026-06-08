@@ -104,7 +104,12 @@ export default function RegularCommunicationsPageJA() {
         description="いわき市でTEFL認定講師による自然な英会話スキル構築。実践的コミュニケーション練習と文化交流を通じて、ビジネス英語とTOEIC対策プログラムを補完するクラス。"
         keywords="英会話クラス いわき, TEFL認定会話指導, 英語スピーキング練習, 会話サークル いわき, 英語コミュニケーションスキル 日本"
         lang="ja"
-        canonical="https://zealous-chandrasekhar2-9jm3e.view-3.tempo-dev.app/regular-communications"
+        canonical="https://www.dreamenglishiwaki.com/regular-communications"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/regular-communications" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/regular-communications" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/regular-communications" },
+        ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         {/* Hero Section */}

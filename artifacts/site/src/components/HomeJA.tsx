@@ -14,6 +14,11 @@ export default function HomeJA() {
         lang="ja"
         canonical="https://www.dreamenglishiwaki.com/"
         isLocalBusiness={true}
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/" },
+        ]}
       />
 
       <div className="min-h-screen bg-white">

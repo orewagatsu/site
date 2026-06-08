@@ -105,7 +105,12 @@ export default function BlogPage() {
         title="English Learning Blog - TOEIC Tips, Business English & Success Stories | Dream English Iwaki"
         description="Expert English learning tips, TOEIC strategies, business English advice, and student success stories from Dream English School in Iwaki, Japan. Free resources for English learners."
         keywords="English learning tips, TOEIC strategies, business English advice, English study materials, Iwaki English blog, TEFL teaching methods, English success stories, free TOEIC practice"
-        canonical="https://your-domain.com/blog"
+        canonical="https://www.dreamenglishiwaki.com/en/blog"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/blog" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/blog" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/blog" },
+        ]}
       />
       
       <div className="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-rose-50">

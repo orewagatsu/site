@@ -14,6 +14,11 @@ export default function Home() {
         lang="en"
         canonical="https://www.dreamenglishiwaki.com/en"
         isLocalBusiness={true}
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/" },
+        ]}
       />
       <div className="min-h-screen bg-white">
         <HeroSection />

@@ -61,7 +61,12 @@ export default function BusinessEnglishPage() {
         description="Advance your career with TEFL-certified Business English instruction and TOEIC preparation in Iwaki. Professional English programs for business consultants, executives, and professionals seeking global career opportunities."
         keywords="Business English Iwaki, TEFL certified business training, TOEIC preparation, professional English Iwaki, executive communication training, business English classes Japan"
         lang="en"
-        canonical="https://zealous-chandrasekhar2-9jm3e.view-3.tempo-dev.app/en/business-english"
+        canonical="https://www.dreamenglishiwaki.com/en/business-english"
+        hreflangAlternates={[
+          { hreflang: "ja", href: "https://www.dreamenglishiwaki.com/business-english" },
+          { hreflang: "en", href: "https://www.dreamenglishiwaki.com/en/business-english" },
+          { hreflang: "x-default", href: "https://www.dreamenglishiwaki.com/business-english" },
+        ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         {/* Hero Section */}
