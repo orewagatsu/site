@@ -69,6 +69,11 @@ export default function NavigationBar() {
       path: isJapanese ? "/pricing" : "/en/pricing",
       label: t("nav.pricing"),
     },
+    {
+      key: "blog",
+      path: isJapanese ? "/blog" : "/en/blog",
+      label: t("nav.blog"),
+    },
   ];
 
   const isActivePath = (path: string) => {
