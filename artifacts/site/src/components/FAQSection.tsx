@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "Are online lessons available?",
     answer:
-      "Yes, we offer online lessons via Zoom. This is a great option if you live outside Iwaki, travel frequently for work, or simply prefer the convenience of learning from home.",
+      "Yes, we offer online lessons via Zoom or LINE. You can also reach us and book lessons directly through LINE — just send us a message. It's a great option if you live outside Iwaki, travel for work, or prefer learning from home.",
   },
   {
     question: "Which is better — group or private lessons?",
