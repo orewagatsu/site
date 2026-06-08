@@ -16,6 +16,8 @@ import PricingPage from "./components/PricingPage";
 import PricingPageJA from "./components/PricingPageJA";
 import BlogPage from "./components/BlogPage";
 import BlogPageJA from "./components/BlogPageJA";
+import BlogPostPage from "./components/BlogPostPage";
+import AdminPage from "./components/AdminPage";
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
         <Route path="/en/pricing" element={<PricingPage />} />
         <Route path="/en/contact" element={<ContactPage />} />
         <Route path="/en/blog" element={<BlogPage />} />
+        <Route path="/en/blog/:slug" element={<BlogPostPage lang="en" />} />
         <Route path="/en/intercultural-consulting" element={<InterculturalConsultingPage />} />
 
         {/* Japanese Routes (Default) */}
@@ -42,7 +45,11 @@ function App() {
         <Route path="/pricing" element={<PricingPageJA />} />
         <Route path="/contact" element={<ContactPageJA />} />
         <Route path="/blog" element={<BlogPageJA />} />
+        <Route path="/blog/:slug" element={<BlogPostPage lang="ja" />} />
         <Route path="/intercultural-consulting" element={<InterculturalConsultingPageJA />} />
+
+        {/* Admin */}
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </HelmetProvider>
   );
