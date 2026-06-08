@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.dreamenglishiwaki.com/sitemap.xml
+
+# Disallow tempo development files
+Disallow: /tempobook/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow important pages for SEO
+Allow: /en/
+Allow: /business-english
+Allow: /regular-communications
+Allow: /intercultural-consulting
+Allow: /pricing
+Allow: /contact
+Allow: /blog

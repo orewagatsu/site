@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "businessEnglish": "ビジネス英語",
+    "regularCommunications": "英会話クラス",
+    "interculturalConsulting": "ビジネスコンサルティング",
+    "pricing": "料金",
+    "language": "言語"
+  },
+  "hero": {
+    "title": "ドリーム英語 - TEFL認定ESLスクール",
+    "subtitle": "福島県いわき市でTEFL認定講師による専門的な英語学習。ビジネス英語、TOEIC対策、異文化コンサルティングでキャリアアップを支援します。",
+    "scheduleConsultation": "相談予約",
+    "learnMore": "詳細を見る"
+  },
+  "about": {
+    "title": "ドリームESL - TEFL認定英語スクールについて",
+    "content": "美しいいわき市に位置し、TEFL認定講師が専門的な英語教育を提供します。ビジネス英語、TOEIC対策、キャリア成功のための実践的コミュニケーションスキルを専門としています。"
+  },
+  "philosophy": {
+    "title": "教育理念",
+    "content": "従来の文法重視の方法を超えて、実践的なコミュニケーションスキルを重視しています。学生は自分の興味や目標について意味のある会話を通じて英語を学びます。"
+  },
+  "programs": {
+    "title": "私たちのプログラム",
+    "content": "大人の英会話クラスからビジネス英語、異文化コミュニケーションコンサルティングまで、あなたのライフスタイルと目標に合わせた個別の学習体験を提供します。"
+  },
+  "features": {
+    "practicalLearning": {
+      "title": "実践的学習",
+      "description": "実世界での英語使用に焦点"
+    },
+    "smallClasses": {
+      "title": "少人数クラス",
+      "description": "すべての学生への個別対応"
+    },
+    "culturalBridge": {
+      "title": "文化の架け橋",
+      "description": "日本と国際的な視点をつなぐ"
+    },
+    "goalOriented": {
+      "title": "目標志向",
+      "description": "特定の英語目標を達成"
+    }
+  },
+  "contact": {
+    "title": "一緒に旅を始めましょう",
+    "subtitle": "あなたの英語学習の冒険は、シンプルな会話から始まります。私たちはあなたの話を聞き、目標を理解し、成功への個別の道筋を作るためにここにいます。",
+    "visitTitle": "いわきの温かい空間をご訪問ください",
+    "connectTitle": "お問い合わせ",
+    "formTitle": "変革を始めましょう",
+    "fullName": "お名前",
+    "emailAddress": "メールアドレス",
+    "message": "メッセージ",
+    "messagePlaceholder": "英語学習の目標についてお聞かせください...",
+    "sendMessage": "メッセージを送信",
+    "thankYou": "メッセージをありがとうございます！",
+    "responseTime": "24時間以内にご相談の予約についてご連絡いたします。",
+    "whatMakesDifferent": "私たちの特徴",
+    "differences": [
+      "経験豊富なネイティブ英語講師",
+      "あなたのライフスタイルに合わせた柔軟なスケジュール",
+      "実践的なコミュニケーションスキルに焦点",
+      "個別対応のための少人数クラス",
+      "美しいいわき市に立地"
+    ]
+  }
+}

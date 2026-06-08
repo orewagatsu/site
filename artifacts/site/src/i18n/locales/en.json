@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Home",
+    "businessEnglish": "Business English",
+    "regularCommunications": "Conversation Classes",
+    "interculturalConsulting": "Business Consulting",
+    "pricing": "Pricing",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Dream English - TEFL Certified ESL School",
+    "subtitle": "Professional English learning in Iwaki, Japan with TEFL-certified instructors. Specializing in Business English, TOEIC preparation, and intercultural consulting for career advancement.",
+    "scheduleConsultation": "Schedule Consultation",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "About Dream ESL - TEFL Certified English School",
+    "content": "Located in beautiful Iwaki, Japan, our TEFL-certified instructors provide professional English education. We specialize in Business English, TOEIC preparation, and practical communication skills for career success."
+  },
+  "philosophy": {
+    "title": "TEFL-Certified Teaching Philosophy",
+    "content": "Our TEFL-certified approach emphasizes practical Business English and TOEIC preparation. Students develop professional communication skills through real-world scenarios and industry-specific training."
+  },
+  "programs": {
+    "title": "Professional English Programs in Iwaki",
+    "content": "From Business English and TOEIC preparation to intercultural consulting services, our TEFL-certified programs are designed for professionals seeking career advancement and global business success."
+  },
+  "features": {
+    "practicalLearning": {
+      "title": "TEFL-Certified Instruction",
+      "description": "Professional English training with certified teachers"
+    },
+    "smallClasses": {
+      "title": "Small Classes",
+      "description": "Personalized attention for every student"
+    },
+    "culturalBridge": {
+      "title": "Business Consulting",
+      "description": "Intercultural communication for global business success"
+    },
+    "goalOriented": {
+      "title": "TOEIC Preparation",
+      "description": "Specialized training for TOEIC score improvement"
+    }
+  },
+  "contact": {
+    "title": "Let's Start Your Journey Together",
+    "subtitle": "Your English learning adventure begins with a simple conversation. We're here to listen, understand your goals, and create a personalized path to success.",
+    "visitTitle": "Visit Our Welcoming Space in Iwaki",
+    "connectTitle": "Connect With Us",
+    "formTitle": "Begin Your Transformation",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your English learning goals...",
+    "sendMessage": "Send Message",
+    "thankYou": "Thank you for your message!",
+    "responseTime": "We'll get back to you within 24 hours to schedule your consultation.",
+    "whatMakesDifferent": "What Makes Us Different",
+    "differences": [
+      "Experienced native English instructors",
+      "Flexible scheduling to fit your lifestyle",
+      "Focus on practical communication skills",
+      "Small class sizes for personalized attention",
+      "Located in beautiful Iwaki, Japan"
+    ]
+  }
+}
