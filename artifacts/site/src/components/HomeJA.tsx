@@ -2,6 +2,7 @@ import SEO from "./SEO";
 import HeroSectionJA from "./HeroSectionJA";
 import ContentSectionJA from "./ContentSectionJA";
 import TestimonialSectionJA from "./TestimonialSectionJA";
+import FAQSectionJA from "./FAQSectionJA";
 import ContactSectionJA from "./ContactSectionJA";
 
 export default function HomeJA() {
@@ -25,6 +26,7 @@ export default function HomeJA() {
         <HeroSectionJA />
         <ContentSectionJA />
         <TestimonialSectionJA />
+        <FAQSectionJA />
         <ContactSectionJA />
       </div>
     </>

@@ -132,7 +132,7 @@ export default function ContactPageJA() {
                 </h2>
                 <div className="w-full h-80 rounded-lg overflow-hidden mb-6 shadow-md">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.123456789!2d140.8866667!3d37.0500000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602f1b5b5b5b5b5b%3A0x1234567890abcdef!2z44CSOTcwLTgwMjYgRnVrdXNoaW1hLCBJd2FraSwgU2FrdW1hY2hpIDMtY2hvbWXiiJLvvJLiiJLvvJEz!5e0!3m2!1sen!2sjp!4v1234567890123!5m2!1sen!2sjp"
+                    src="https://maps.google.com/maps?q=Dream+English+%E3%83%89%E3%83%AA%E3%83%BC%E3%83%A0%E8%8B%B1%E8%AA%9E+%E3%81%84%E3%82%8F%E3%81%8D+%E7%A6%8F%E5%B3%B6&output=embed&hl=ja"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

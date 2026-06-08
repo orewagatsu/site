@@ -2,6 +2,7 @@ import SEO from "./SEO";
 import HeroSection from "./HeroSection";
 import ContentSection from "./ContentSection";
 import TestimonialSection from "./TestimonialSection";
+import FAQSection from "./FAQSection";
 import ContactSection from "./ContactSection";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <HeroSection />
         <ContentSection />
         <TestimonialSection />
+        <FAQSection />
         <ContactSection />
       </div>
     </>
