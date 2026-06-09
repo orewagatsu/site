@@ -214,19 +214,6 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              {/* SEO Tools Section - Removed download buttons, files now in public folder */}
-              <div className="bg-green-50 p-6 rounded-xl border border-green-200">
-                <h4 className="font-bold text-lg mb-3 text-green-800">
-                  ✅ SEO Optimized
-                </h4>
-                <div className="space-y-2 text-sm text-green-700">
-                  <p>✓ Sitemap.xml generated and published</p>
-                  <p>✓ Robots.txt configured for search engines</p>
-                  <p>✓ Google Maps integration active</p>
-                  <p>✓ Local business schema markup enabled</p>
-                  <p>✓ Geo-targeting for Iwaki, Fukushima</p>
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}
