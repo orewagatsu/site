@@ -59,7 +59,6 @@ export function Magazine() {
           Insights, student stories, and practical advice for mastering English in Japan.
         </p>
       </header>
-
       <main className="max-w-7xl mx-auto px-6 py-12">
         {/* Featured Article */}
         <section className="mb-20">
@@ -124,10 +123,9 @@ export function Magazine() {
           ))}
         </section>
       </main>
-
       <footer className="border-t border-slate-200 mt-20 py-12 text-center">
         <h2 className="text-2xl font-['Playfair_Display'] font-bold mb-4">Dream English School</h2>
-        <p className="text-slate-500 mb-8 max-w-md mx-auto">Master English and open new doors for your career in Iwaki and beyond.</p>
+        <p className="text-slate-500 mb-8 max-w-md mx-auto">Master English and open new doors for your career in Japan and beyond.</p>
         <p className="text-sm text-slate-400">&copy; {new Date().getFullYear()} Dream English School. All rights reserved.</p>
       </footer>
     </div>
