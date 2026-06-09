@@ -1,0 +1,32 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "uWoR1Yd1u08YcfNVazLy-"
+uri = "file://artifacts/mockup-sandbox/public/images/toeic-listening.jpg"
+type = "image"
+title = "student listening to audio with headphones while studying"
+
+[[outputs]]
+id = "Xe1PED86QFiIqIc1BF0Nh"
+uri = "file://artifacts/mockup-sandbox/public/images/business-email.jpg"
+type = "image"
+title = "professional typing email on laptop in office"
+
+[[outputs]]
+id = "xI3BGNRB_rang2lCAs2Im"
+uri = "file://artifacts/mockup-sandbox/public/images/yuki-story.jpg"
+type = "image"
+title = "professional japanese businesswoman smiling in modern office"
+
+[[outputs]]
+id = "r6ZYDSUKlCP0cg5oV7FhA"
+uri = "file://artifacts/mockup-sandbox/public/images/speaking.jpg"
+type = "image"
+title = "people talking and smiling in a group discussion or meeting"
+
+[[outputs]]
+id = "wjOz5vcufQEMWasYrsqVk"
+uri = "file://artifacts/mockup-sandbox/public/images/apps.jpg"
+type = "image"
+title = "person using learning app on smartphone"
