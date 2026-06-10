@@ -18,6 +18,7 @@ import BlogPage from "./components/BlogPage";
 import BlogPageJA from "./components/BlogPageJA";
 import BlogPostPage from "./components/BlogPostPage";
 import AdminPage from "./components/AdminPage";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         {/* Admin */}
         <Route path="/admin" element={<AdminPage />} />
       </Routes>
+      <Analytics />
     </HelmetProvider>
   );
 }
