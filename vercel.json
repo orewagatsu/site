@@ -2,7 +2,9 @@
   "buildCommand": "pnpm --filter @workspace/site run build",
   "outputDirectory": "artifacts/site/dist/public",
   "installCommand": "pnpm install --no-frozen-lockfile",
-  "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  "routes": [
+    { "src": "/api/blog/(.*)", "dest": "/api/blog?__p=$1" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
