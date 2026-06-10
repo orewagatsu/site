@@ -9,7 +9,13 @@
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
   },
   "private": true,
+  "dependencies": {
+    "@vitalets/google-translate-api": "^8.4.0",
+    "pg": "^8.13.3"
+  },
   "devDependencies": {
+    "@types/pg": "^8.11.10",
+    "@vercel/node": "^5.0.2",
     "prettier": "^3.8.3",
     "typescript": "~5.9.3"
   }
