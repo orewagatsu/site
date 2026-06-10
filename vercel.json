@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter @workspace/site run build",
-  "outputDirectory": "artifacts/site/dist",
+  "outputDirectory": "artifacts/site/dist/public",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
