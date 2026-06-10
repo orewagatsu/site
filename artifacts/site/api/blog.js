@@ -1,4 +1,6 @@
-const { Pool } = require("pg");
+import pg from "pg";
+
+const { Pool } = pg;
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
@@ -23,19 +25,17 @@ function requireAdmin(req, res) {
   return true;
 }
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, x-admin-password");
 
   if (req.method === "OPTIONS") return res.status(200).end();
 
-  // Vercel passes captured path group as __p query param
   const path = "/" + (req.query.__p || "");
   const method = req.method;
 
   try {
-    // GET /posts
     if (method === "GET" && path === "/posts") {
       const { rows } = await pool.query(
         `SELECT id, slug, en_title, en_excerpt, en_category, ja_title, ja_excerpt,
@@ -46,7 +46,6 @@ module.exports = async function handler(req, res) {
       return res.json({ posts: rows });
     }
 
-    // GET /posts/:slug
     const slugMatch = path.match(/^\/posts\/([^/]+)$/);
     if (method === "GET" && slugMatch) {
       const { rows } = await pool.query(
@@ -57,13 +56,11 @@ module.exports = async function handler(req, res) {
       return res.json({ post: rows[0] });
     }
 
-    // POST /admin/translate
     if (method === "POST" && path === "/admin/translate") {
       if (!requireAdmin(req, res)) return;
       const { title, excerpt, content } = req.body;
       if (!title && !excerpt && !content)
         return res.status(400).json({ error: "Nothing to translate" });
-
       const { translate } = await import("@vitalets/google-translate-api");
       const results = {};
       if (title) results.ja_title = (await translate(title, { to: "ja" })).text;
@@ -77,7 +74,6 @@ module.exports = async function handler(req, res) {
       return res.json(results);
     }
 
-    // GET /admin/posts
     if (method === "GET" && path === "/admin/posts") {
       if (!requireAdmin(req, res)) return;
       const { rows } = await pool.query(
@@ -87,7 +83,6 @@ module.exports = async function handler(req, res) {
       return res.json({ posts: rows });
     }
 
-    // POST /admin/posts
     if (method === "POST" && path === "/admin/posts") {
       if (!requireAdmin(req, res)) return;
       const { en_title, en_excerpt, en_content, en_category, ja_title, ja_excerpt, ja_content, image_url, published } = req.body;
@@ -104,7 +99,6 @@ module.exports = async function handler(req, res) {
       return res.json({ post: rows[0] });
     }
 
-    // /admin/posts/:id — GET, PUT, DELETE
     const adminIdMatch = path.match(/^\/admin\/posts\/(\d+)$/);
     if (adminIdMatch) {
       if (!requireAdmin(req, res)) return;
@@ -115,7 +109,6 @@ module.exports = async function handler(req, res) {
         if (!rows[0]) return res.status(404).json({ error: "Not found" });
         return res.json({ post: rows[0] });
       }
-
       if (method === "PUT") {
         const { en_title, en_excerpt, en_content, en_category, ja_title, ja_excerpt, ja_content, image_url, published } = req.body;
         const pub = !!published;
@@ -132,7 +125,6 @@ module.exports = async function handler(req, res) {
         );
         return res.json({ post: rows[0] });
       }
-
       if (method === "DELETE") {
         await pool.query(`DELETE FROM blog_posts WHERE id = $1`, [id]);
         return res.json({ success: true });
@@ -144,4 +136,4 @@ module.exports = async function handler(req, res) {
     console.error(err);
     res.status(500).json({ error: "Server error", detail: err.message });
   }
-};
+}
