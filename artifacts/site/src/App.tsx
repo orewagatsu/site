@@ -19,6 +19,7 @@ import BlogPageJA from "./components/BlogPageJA";
 import BlogPostPage from "./components/BlogPostPage";
 import AdminPage from "./components/AdminPage";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
         <Route path="/admin" element={<AdminPage />} />
       </Routes>
       <Analytics />
+      <SpeedInsights />
     </HelmetProvider>
   );
 }
