@@ -27,7 +27,7 @@ export default function BlogPageJA() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/blog/posts?lang=ja")
+    fetch("/api/blog/posts")
       .then((r) => r.json())
       .then((d) => { setPosts(d.posts || []); setLoading(false); })
       .catch(() => setLoading(false));

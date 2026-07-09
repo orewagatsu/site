@@ -25,7 +25,7 @@ export default function BlogPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/blog/posts?lang=en")
+    fetch("/api/blog/posts")
       .then((r) => r.json())
       .then((d) => { setPosts(d.posts || []); setLoading(false); })
       .catch(() => setLoading(false));

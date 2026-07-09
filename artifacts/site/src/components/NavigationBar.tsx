@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Globe, Menu, X } from "lucide-react";
@@ -13,6 +13,7 @@ import {
 export default function NavigationBar() {
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const currentLanguage = i18n.language;
@@ -25,24 +26,21 @@ export default function NavigationBar() {
     const newLang = isJapanese ? "en" : "ja";
     i18n.changeLanguage(newLang);
 
-    // Navigate to the corresponding page in the new language
     const currentPath = location.pathname;
     let newPath = currentPath;
 
     if (isJapanese) {
-      // Switching from Japanese to English
       if (currentPath === "/") {
         newPath = "/en";
       } else {
         newPath = `/en${currentPath}`;
       }
     } else {
-      // Switching from English to Japanese
       newPath = currentPath.replace("/en", "");
       if (newPath === "") newPath = "/";
     }
 
-    window.location.href = newPath;
+    navigate(newPath);
   };
 
   const navItems = [
