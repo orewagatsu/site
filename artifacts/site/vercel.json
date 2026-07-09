@@ -1,5 +1,7 @@
 {
+  "buildCommand": "pnpm run build",
   "outputDirectory": "dist/public",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "routes": [
     { "src": "/api/blog/(.*)", "dest": "/api/blog?__p=$1" },
     { "handle": "filesystem" },
